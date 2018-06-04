@@ -1,0 +1,9 @@
+<!--pages/page1/page1.wxml-->
+
+<button type="default" bindtap='switchClicked'> switch </button>
+<button type="primary" bindtap='btnClicked'> button </button>
+
+<text wx:if="{{show}}">{{textTitle}}</text>
+
+<input placeholder='实时打印' bindinput='inputText'></input>
+<text>{{inputValue}}</text>
