@@ -1,2 +1,5 @@
 <!--pages/page2/page2.wxml-->
-<text>pages/page2/page2.wxml</text>
+
+<view>
+  <canvas style="width: 100%; height: 300px;" canvas-id="firstCanvas" bindtap='canvasClicked'></canvas>
+</view>

@@ -1,66 +1,50 @@
-// pages/page2/page2.js
+var location = 0;
+var count = 0;
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
+  canvasIdErrorCallback: function (e) {
+    console.error(e.detail.errMsg)
+  },
+  onReady: function (e) {
+    this.drawSmile();
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+  position: {
+    x: 0,
+    y: 0
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+  canvasClicked: function () {
+    if (location == 0) {
+      location = 1;
+    }
+    else if (location == 1) {
+      location = 0;
+    }
+
+    if (count == 0) {
+      setInterval(this.drawSmile, 10);
+      count++;
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+  drawSmile: function () {
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
+    if (location == 1) {
+      this.position.x = this.position.x + 2;
+      this.position.y++;
+    } else {
+      this.position.x = this.position.x - 2;
+      this.position.y--;
+    }
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
+    // 使用 wx.createContext 获取绘图上下文 context
+    var context = wx.createCanvasContext('firstCanvas')
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    context.setStrokeStyle("#ff0000")
+    context.setLineWidth(2)
+    context.arc(this.position.x, this.position.y, 20, 0, 2 * Math.PI, true)
+    context.stroke()
+    context.draw()
   }
 })
