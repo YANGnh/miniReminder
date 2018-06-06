@@ -1,0 +1,10 @@
+<!--pages/page3/page3.wxml-->
+
+<view class='background'>
+  <canvas style="width: 100%; height: 300px;" canvas-id="myCanvas"></canvas>
+</view>
+
+<view>
+  <button class='upButton' type='primary' bindtap='drawStockUp'>up</button>
+  <button class='downButton' type='default' bindtap='drawStockDown'>down</button>
+</view>

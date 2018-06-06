@@ -1,0 +1,13 @@
+/* pages/page3/page3.wxss */
+
+.background {
+  background-color: black;
+}
+
+/* .upButton {
+  background-color: red;
+}
+
+.downButton {
+  background-color: green;
+} */

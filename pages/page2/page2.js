@@ -5,6 +5,7 @@ Page({
   canvasIdErrorCallback: function (e) {
     console.error(e.detail.errMsg)
   },
+  
   onReady: function (e) {
     this.drawSmile();
   },
