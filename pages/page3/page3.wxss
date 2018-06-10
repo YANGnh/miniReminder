@@ -4,10 +4,17 @@
   background-color: black;
 }
 
-/* .upButton {
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+ .upButton {
   background-color: red;
+  width: 375rpx;
 }
 
 .downButton {
   background-color: green;
-} */
+  width: 375rpx;
+} 

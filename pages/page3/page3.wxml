@@ -4,7 +4,15 @@
   <canvas style="width: 100%; height: 300px;" canvas-id="myCanvas"></canvas>
 </view>
 
+<view class='buttonContainer'>
+  <view>
+    <button class='upButton' bindtap='drawStockUp'>up</button>
+  </view>
+  <view>
+    <button class='downButton' type='primary' bindtap='drawStockDown'>down</button>
+  </view>
+</view>
+
 <view>
-  <button class='upButton' type='primary' bindtap='drawStockUp'>up</button>
-  <button class='downButton' type='default' bindtap='drawStockDown'>down</button>
+  <button type='default' bindtap='clearBtnClicked'>clear</button>
 </view>

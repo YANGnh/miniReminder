@@ -12,8 +12,6 @@ Page({
 
     width: 10,
     height: 30,
-
-    // originY: 0,
   },
 
   /**
@@ -31,7 +29,6 @@ Page({
   },
 
   drawStockUp: function () {
-    //this.data.originY = this.data.y; //todotodotodotodo
     this.data.x = this.data.x + this.data.xMove;
     this.data.y = this.data.y - this.data.yMove;
 
@@ -51,13 +48,11 @@ Page({
     ctx.draw(true)
   },
 
-  // drawLine: function () {
-  //   var line = wx.createCanvasContext('myCanvas')
-  //   line.setStrokeStyle('yellow')
-
-  //   if (this.data.x == this.data.x + 2 * xMove) {
-  //     line.moveTo(xMove + width / 2, )
-  //     line.lineTo()
-  //   }
-  // }
+  clearBtnClicked: function () {
+    var ctx = wx.createCanvasContext('myCanvas')
+    ctx.clearRect(0, 0, 375, 300)
+    ctx.draw()
+    this.data.x = 0;
+    this.data.y = 250;
+  },
 })
