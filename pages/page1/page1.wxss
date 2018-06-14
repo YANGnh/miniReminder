@@ -1,1 +1,46 @@
 /* pages/page1/page1.wxss */
+
+.contentView {
+  height: 100%;
+}
+
+.titleView {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100rpx;
+  margin-bottom: 300rpx;
+}
+
+.startBtn {
+  margin-bottom: 50rpx;
+  width: 80%;
+}
+
+.bottomView {
+  margin-top: 200rpx;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+  left: 0rpx;
+}
+
+.flex-item {
+  width: 50%;
+}
+
+.flexBtnLeft {
+  width: 200rpx;
+  margin-left: 100rpx;
+  margin-top: 50rpx;
+    margin-bottom: 50rpx;  
+}
+
+.flexBtnRight {
+  width: 200rpx;
+  margin-right: 100rpx;
+  margin-top: 50rpx;
+   margin-bottom: 50rpx; 
+}

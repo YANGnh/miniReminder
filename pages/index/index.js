@@ -11,7 +11,7 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.switchTab({
+    wx.redirectTo({
       url: '../page1/page1'
     })
   },
