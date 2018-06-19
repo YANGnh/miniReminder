@@ -1,0 +1,5 @@
+<!--pages/page1/ranking/ranking.wxml-->
+
+<view wx:for="{{objectArray}}">
+  {{index}}: {{item.ranking}}
+</view>

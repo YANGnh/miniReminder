@@ -5,7 +5,8 @@
     "pages/page1/page1",
     "pages/page1/loadingPage/loadingPage",
     "pages/page1/gamePage/gamePage",
-    "pages/page1/information/information"
+    "pages/page1/information/information",
+    "pages/page1/ranking/ranking"
   ],
   "window": {
     "backgroundTextStyle": "light",
