@@ -64,7 +64,7 @@ Page({
     if (res.from === 'button') {
       return {
         title: 'title 1',
-        path: '/page/user?id=123'
+        path: 'pages/page1/page1'
       }
     }
   }

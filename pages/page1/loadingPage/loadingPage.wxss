@@ -1,1 +1,11 @@
 /* pages/page1/loadingPage/loadingPage.wxss */
+
+.leftView {
+  background-color: black;
+  height: 100rpx;
+  width: 300rpx;
+  position: fixed;
+  top: 800rpx;
+  left: -300rpx;  
+  transform: rotate(-45deg)    
+}
