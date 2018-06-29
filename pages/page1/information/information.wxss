@@ -1,1 +1,46 @@
 /* pages/page1/information/information.wxss */
+.userAvatar {
+  width: 66rpx;
+  height: 66rpx;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2rpx solid #4d6cdf;
+}
+
+.roundView {
+  width: 150rpx;
+  height: 100rpx;
+  border-top-left-radius: 100rpx;
+  border-bottom-left-radius: 100rpx;
+  background-color: blue;
+  position: relative;
+}
+
+.rightView {
+  width: 150rpx;
+  height: 100rpx;
+  border-top-right-radius: 100rpx;
+  border-bottom-right-radius: 100rpx;
+  background-color: red;
+}
+
+.cover {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: tomato; 
+  position: absolute;
+  z-index: 1;
+  left: 110rpx;
+  border:  10rpx solid rgba(0, 0, 0, 1);
+}
+
+.flex {
+  margin: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  height: 300rpx;
+}

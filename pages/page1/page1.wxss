@@ -35,12 +35,12 @@
   width: 200rpx;
   margin-left: 100rpx;
   margin-top: 50rpx;
-    margin-bottom: 50rpx;  
+  margin-bottom: 50rpx;  
 }
 
 .flexBtnRight {
   width: 200rpx;
   margin-right: 100rpx;
   margin-top: 50rpx;
-   margin-bottom: 50rpx; 
+  margin-bottom: 50rpx; 
 }

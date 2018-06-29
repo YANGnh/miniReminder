@@ -3,5 +3,9 @@
 <button bindtap='loadingAni'>Loading</button>
 
 <view animation="{{animationData}}">
-  <view class='leftView' ></view>
+  <view class='leftView'></view>
+</view>
+
+<view class='img-container'>
+  <image src='/src/icon.jpg' class='img' animation="{{imageAniData}}"></image>
 </view>

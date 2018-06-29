@@ -3,3 +3,7 @@
 <view wx:for="{{objectArray}}">
   {{index}}: {{item.ranking}}
 </view>
+<button bindtap="goback">123</button>
+<button bindtap="loadingAni">456</button>
+<!-- <canvas style="width: 100%; height: 200px;" canvas-id="canvas"></canvas> -->
+<canvas style='width: 100%; height: 300px;' canvas-id='myCanvas' animation="{{animationData}}"></canvas>

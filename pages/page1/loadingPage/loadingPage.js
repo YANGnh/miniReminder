@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    animationData: {}
+    animationData: {},
+    imageAniData: {},
+    rotateIndex: ''
   },
 
   /**
@@ -23,7 +25,13 @@ Page({
       timingFunction: 'ease',
     });
 
+    var imageAni = wx.createAnimation({
+      duration: 5000,
+      timingFunction: "linear"
+    })
+
     this.animation = animation
+    this.imageAni = imageAni
   },
 
   /**
@@ -37,7 +45,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    this.imageLoading();
   },
 
   /**
@@ -75,18 +83,27 @@ Page({
 
   },
 
-  loadingAni:function() {
+  loadingAni: function() {
     this.animation.translate(200, -200).step()
 
     this.setData({
       animationData: this.animation.export()
     })
 
-    setTimeout(function () {
+    setTimeout(function() {
       this.animation.translate(-200, 200).step()
       this.setData({
         animationData: this.animation.export()
       })
     }.bind(this), 2000)
+  },
+
+  imageLoading: function() {
+    this.timeInterval = setInterval(function () {
+      this.imageAni.rotate(1080).step()
+      this.setData({
+        imageAniData: this.imageAni.export()
+      })
+    }.bind(this), 500)  
   }
 })

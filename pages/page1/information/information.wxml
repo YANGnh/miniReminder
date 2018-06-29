@@ -1,6 +1,13 @@
 <!--pages/page1/information/information.wxml-->
 
-<open-data type="userAvatarUrl"></open-data>
+<open-data class="userAvatar" type="userAvatarUrl"></open-data>
 <open-data type="userNickName"></open-data>
 
 <button open-type='share'>分享</button>
+<button open-type="contact">联系客服</button>
+
+<view class='flex'>
+  <view class='roundView'></view>
+  <view class='cover'></view>
+  <view class='rightView'></view>
+</view>

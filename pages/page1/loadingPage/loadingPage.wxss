@@ -9,3 +9,13 @@
   left: -300rpx;  
   transform: rotate(-45deg)    
 }
+
+.img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.img-container {
+  text-align: center;
+  margin-top: 300rpx;
+}

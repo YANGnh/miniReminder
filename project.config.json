@@ -5,7 +5,7 @@
 	},
 	"setting": {
 		"urlCheck": true,
-		"es6": true,
+		"es6": false,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
@@ -39,6 +39,18 @@
 					"id": 0,
 					"name": "loading",
 					"pathName": "pages/page1/page1",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ranking",
+					"pathName": "pages/page1/ranking/ranking",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/page1/information/information",
 					"query": ""
 				}
 			]
