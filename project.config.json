@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
 	"appid": "wx8fbf79f743b8b0d6",
-	"projectname": "demo",
+	"projectname": "miniReminder",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
