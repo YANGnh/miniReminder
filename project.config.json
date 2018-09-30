@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.9",
+	"libVersion": "2.3.0",
 	"appid": "wx8fbf79f743b8b0d6",
 	"projectname": "demo",
 	"isGameTourist": false,
@@ -33,27 +33,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": 0,
-					"name": "loading",
-					"pathName": "pages/page1/page1",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "ranking",
-					"pathName": "pages/page1/ranking/ranking",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "info",
-					"pathName": "pages/page1/information/information",
-					"query": ""
-				}
-			]
+			"current": -1,
+			"list": []
 		}
 	}
 }
