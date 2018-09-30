@@ -1,0 +1,10 @@
+/* pages/index/index.wxss */
+
+.userAvatar {
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 300rpx;
+}

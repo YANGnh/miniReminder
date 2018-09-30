@@ -3,9 +3,8 @@
     "pages/index/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "miniReminder",
     "navigationBarTextStyle": "whtie"
   }
 }
